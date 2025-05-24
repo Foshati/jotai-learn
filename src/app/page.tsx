@@ -1,5 +1,5 @@
 "use client";
-import { countAtom, doubleCountAtom } from "@/atoms/countAtoms";
+import { countAtom, doubleCountAtom } from "@/atoms/countAtom";
 import { useAtom } from "jotai";
 
 export default function HomePage() {
