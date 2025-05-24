@@ -1,12 +1,13 @@
 import { atom } from "jotai";
+import { atomWithStorage } from "jotai/utils";
 
-type CartItemType = {
+export type CartItemType = {
     id: string;
     name: string;
     price: number;
 };
 
-export const cartAtom = atom<CartItemType[]>([]);
+export const cartAtom = atomWithStorage<CartItemType[]>("cart", []);
 
 export const totalAtom = atom((get) =>
     get(cartAtom).reduce((total, item) => total + item.price, 0)
