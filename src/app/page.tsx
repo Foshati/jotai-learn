@@ -15,10 +15,11 @@ export default function HomePage() {
         {doubleCounter}
       </p>
       <div>
-        <button className="btn" onClick={() => setCount((prev) => prev + 1)}>
+        <button className="btn" onClick={() => setCount(count + 1)}>
           Increment
         </button>
-        <button className="btn" onClick={() => setCount((prev) => prev - 1)}>
+
+        <button className="btn" onClick={() => setCount(count - 1)}>
           Decrement
         </button>
       </div>
