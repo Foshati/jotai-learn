@@ -1,5 +1,5 @@
 "use client";
-import { loadableInfoAtom } from "@/atoms/infoAtom";
+import { loadableInfoAtom } from "@/atoms/userAtom";
 import { useAtom } from "jotai";
 
 export default function PageName() {

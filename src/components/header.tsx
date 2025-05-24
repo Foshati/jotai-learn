@@ -32,6 +32,9 @@ export const Header = () => {
               <li>
                 <Link href="e2">Example two</Link>
               </li>
+              <li>
+                <Link href="/e3">Example three</Link>
+              </li>
             </ul>
           </div>
           <a className="btn btn-ghost text-xl"> Jotai-learn</a>
@@ -42,7 +45,10 @@ export const Header = () => {
               <Link href="/">Example one </Link>
             </li>
             <li>
-              <Link href="e2">Example two</Link>
+              <Link href="/e2">Example two</Link>
+            </li>
+            <li>
+              <Link href="/e3">Example three</Link>
             </li>
           </ul>
         </div>
